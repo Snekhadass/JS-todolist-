@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(135deg, #c471f5, #af32af);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 6px 32px 0 rgba(0,0,0,0.07);
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1 {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1 img {
+    width: 35px;
+    margin-left: 10px;
+}
+#taskInput {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+#addBtn, .editBtn, .deleteBtn {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 20px;
+    margin: 5px 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background: #a443ad;
+}
+
+#addBtn:hover, .editBtn:hover, .deleteBtn:hover {
+    background: #cf5bbc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList {
+    max-height: 300px; 
+    overflow-y: auto;
+    padding-right: 6px; 
+}
+#taskList::-webkit-scrollbar {
+    width: 8px;
+}
+#taskList::-webkit-scrollbar-track {
+    background: transparent;
+}
+#taskList::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+li {
+    background: rgba(255,255,255,0.2);
+    margin-top: 10px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
